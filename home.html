@@ -99,8 +99,8 @@
         <div class="info">
             <h2 class="location"> <i class="fa fa-street-view" style="color:#eee"></i>{%location%},{%country%}</h2>
             <p id="date"> WED | Dec 23 | 10:49 AM</p>
-            <h1 class="temp">{%tempval%}</h1>
-            <h3 class="tempmin_max">{%tempMin%} | {%tempMax%}</h3>
+            <h1 class="temp">{%tempval%}°C</h1>
+            <h3 class="tempmin_max">{%tempMin%}°C | {%tempMax%}°C</h3>
         </div>
 
     </div>
@@ -111,7 +111,7 @@
 
         const tempStatus="{%tempStatus%}";
         
-        if(tempStatus == "Sunny")
+        if(tempStatus == "Sun")
         {
             weathercon.innerHTML = "<i class='fas fa-sun' style='color:#f1c40f;'></i>";
         }
@@ -119,9 +119,9 @@
         {
             weathercon.innerHTML = "<i class='fas fa-cloud' style='color:#f1f2f6;'></i>";
         }
-        else if(tempStatus=="Rainy")
+        else if(tempStatus=="Rain")
         {
-            weathercon.innerHTML = "<i class='fas fa-rain' style='color:#a4b0be;'></i>";
+            weathercon.innerHTML = "<i class='fas fa-rain' style='color:#11afe4;'></i>";
         }
         else{
             weathercon.innerHTML = "<i class='fas fa-sun' style='color:#44c3de;'></i>";
