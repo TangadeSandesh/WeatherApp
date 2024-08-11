@@ -1,0 +1,26 @@
+kind: Deployment
+metadata:
+  name: sandesh-weatherapp
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: sandesh-weatherapp
+  template:
+    metadata:
+      labels:
+        app: sandesh-weatherapp
+    spec:
+      containers:
+      - name: sandesh-weatherapp
+        # Replace $GCLOUD PROJECT with your project ID 
+        image: us-central1-docker.pkg.dev/coolmalhar-on-gcp/quickstart-wheatherapp/sandesh-weatherapp:pro
+        # This app listens on port 8080 for web traffic by default. 
+        ports:
+        - containerPort: 3000
+        env:
+          - name: PORT
+            value: "3000"
+
+      
+
