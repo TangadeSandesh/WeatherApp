@@ -10,7 +10,8 @@ WeatherApp is a simple React-based weather application that fetches real-time we
 
 ## Preview
 
-![WeatherApp UI](./src/WeatherApp_icons/Assets/preview.png)
+![WeatherApp preview](https://github.com/user-attachments/assets/045534b8-80bd-43fa-8ce7-9ca66c558559)
+
 
 ## Technologies Used
 - **React**: Frontend library.
